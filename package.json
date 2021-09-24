@@ -1,5 +1,6 @@
 {
   "name": "depaul-dapp",
+  "homepage": "https://0xdepaul.github.io/getting-started/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
