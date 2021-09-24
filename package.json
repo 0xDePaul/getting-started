@@ -25,7 +25,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "rm -rf ./docs && react-scripts build && mv ./build ./docs && find ./docs -type f -exec git update-index --no-assume-unchanged '{}' ; && git add --force ./docs && git commit -m \"Deploy current webpage build to GitHub Pages\" && find ./docs -type f -exec git update-index --assume-unchanged '{}' ;"
   },
   "eslintConfig": {
     "extends": [
